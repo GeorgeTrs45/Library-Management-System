@@ -15,7 +15,7 @@ const BookOverview = ({
   cover,
 }: Book) => {
   return (
-    <section className="book-overview">
+    <section className="book-overview overflow-hidden">
       <div className="flex flex-1 flex-col gap-5">
         <h1>{title}</h1>
         <div className="book-info">
@@ -39,13 +39,13 @@ const BookOverview = ({
             Available books: <span>{availableCopies}</span>
           </p>
         </div>
-        <p className="book-description">{description}</p>
+        <p className="book-description ">{description}</p>
         <Button className="book-overview_btn">
           <Image src={"/icons/book.svg"} alt="logo" width={20} height={20} />
           <p className="font-bebas-neue text-xl text-dark-100">Borrow</p>
         </Button>
       </div>
-      <div className="relative flex flex-1 justify-center">
+      <div className="relative flex flex-1 justify-center ">
         <div className="relative">
           <BookCover
             variant="wide"
