@@ -15,7 +15,7 @@ const BookOverview = ({
   cover,
 }: Book) => {
   return (
-    <section className="book-overview overflow-hidden">
+    <section className="book-overview overflow-hidden md:overflow-visible">
       <div className="flex flex-1 flex-col gap-5">
         <h1>{title}</h1>
         <div className="book-info">
